@@ -1,19 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Official website of Infant Jesus Shrine, Vallur">
-<title>Infant Jesus Shrine, Vallur | Where Miracles Happen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Infant Jesus Shrine, Vallur</title>
+
 <style>
-:root{--m:#6f0b06;--d:#430500;--g:#c99724;--c:#fffaf0;--i:#2c2118}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,serif;background:var(--c);color:var(--i);line-height:1.6}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}.top{background:var(--d);color:#fff;text-align:center;padding:8px}.nav{position:sticky;top:0;z-index:5;background:#fffaf0;border-bottom:1px solid #eadfcf;display:flex;justify-content:space-between;align-items:center;padding:9px 6%;gap:20px}.brand{display:flex;align-items:center;gap:10px;color:var(--m);font-weight:bold}.brand img{width:52px;height:52px;object-fit:contain}.brand small{display:block;color:var(--g)}.links{display:flex;gap:22px;font-weight:bold}.hero{min-height:620px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(34,12,3,.72),rgba(34,12,3,.12)),url('IJ33.jpeg') center/cover}.hero>div{padding:70px 8%;color:#fff;max-width:760px}.eyebrow{color:#ffe29a;letter-spacing:2px;font-weight:bold}.hero h1{font-size:clamp(3rem,7vw,6rem);line-height:.9;margin:14px 0}.hero h1 span{display:block;font-size:.45em;font-style:italic;color:#ffe6aa}.btn{display:inline-block;padding:13px 22px;margin:8px 8px 0 0;border-radius:6px;font-weight:bold}.gold{background:var(--g);color:#2b1600}.outline{border:1px solid #fff}.section{max-width:1200px;margin:auto;padding:75px 24px}.kicker{color:var(--m);letter-spacing:2px;font-size:.8rem;font-weight:bold;text-transform:uppercase}h2{color:var(--m);font-size:clamp(2rem,4vw,3.2rem);margin:8px 0 18px}.intro{max-width:760px;color:#66594e;font-size:1.08rem}.schedule{background:#fff;border-top:5px solid var(--g)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}.card{background:var(--c);padding:27px;border:1px solid #eadfcf;border-radius:14px;box-shadow:0 12px 30px rgba(54,27,9,.12)}.card h3{color:var(--m);font-size:1.4rem;margin:0}.time{font-size:1.7rem;font-weight:bold;color:var(--g);margin-top:14px}.event{font-weight:bold}.prayer{background:var(--m);color:#fff;text-align:center;padding:22px;border-radius:14px;margin-top:25px;font-style:italic}.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about img{height:470px;width:100%;object-fit:cover;border-radius:16px;box-shadow:0 14px 35px rgba(0,0,0,.15)}.features{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feature{background:#fff;padding:16px;border-left:4px solid var(--g)}.visit{background:#f5e8c9}.contact{background:var(--d);color:#fff;text-align:center}.contact h2{color:#ffe4a0}.contact p{max-width:720px;margin:auto;color:#f6e7d4}footer{background:#210300;color:#e9d9c4;text-align:center;padding:22px}.menu{display:none}@media(max-width:800px){.links{gap:12px;font-size:.8rem;flex-wrap:wrap;justify-content:flex-end}.grid,.about{grid-template-columns:1fr}.about img{height:360px}.features{grid-template-columns:1fr}.hero{min-height:560px}.nav{padding:8px 4%}}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family: Georgia, "Times New Roman", serif;
+  color:#3d160d;
+  background:#fffaf2;
+  line-height:1.6;
+}
+
+/* NAVIGATION */
+nav{
+  background:#5b0905;
+  color:white;
+  padding:12px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.logo-area{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo-area img{
+  width:55px;
+  height:55px;
+  object-fit:contain;
+  border-radius:50%;
+}
+
+.logo-area h2{
+  font-size:20px;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:22px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav ul li a:hover{
+  color:#f5c04a;
+}
+
+/* HERO */
+.hero{
+  min-height:88vh;
+  background:
+  linear-gradient(rgba(45,10,0,0.35),rgba(45,10,0,0.65)),
+  url('U33.jpeg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:30px;
+}
+
+.hero-content{
+  max-width:850px;
+  text-shadow:2px 2px 8px black;
+}
+
+.hero-content h1{
+  font-size:65px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  font-size:25px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  background:#8b1a0d;
+  color:white;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:bold;
+  border:2px solid #f5c04a;
+}
+
+.btn:hover{
+  background:#f5c04a;
+  color:#5b0905;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 8%;
+  text-align:center;
+}
+
+.section-title{
+  color:#7a1209;
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.section-subtitle{
+  max-width:800px;
+  margin:0 auto 40px;
+  font-size:18px;
+  color:#5b4035;
+}
+
+/* ABOUT */
+.about{
+  background:#fff;
+}
+
+.about-box{
+  max-width:950px;
+  margin:auto;
+  font-size:19px;
+}
+
+/* MASS SCHEDULE */
+.schedule{
+  background:linear-gradient(135deg,#fff6df,#f5dfaa);
+}
+
+.schedule-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.schedule-card{
+  background:white;
+  padding:30px 20px;
+  border-radius:15px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.12);
+  border-bottom:5px solid #8b1a0d;
+}
+
+.schedule-card h3{
+  color:#7a1209;
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.schedule-card p{
+  font-size:18px;
+}
+
+/* DEVOTIONS */
+.devotions{
+  background:#fff;
+}
+
+.devotion-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.devotion-card{
+  padding:25px;
+  background:#fffaf2;
+  border:1px solid #e5c98b;
+  border-radius:15px;
+}
+
+.devotion-card h3{
+  color:#8b1a0d;
+  margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact{
+  background:#5b0905;
+  color:white;
+}
+
+.contact .section-title{
+  color:#f5c04a;
+}
+
+.contact-box{
+  max-width:700px;
+  margin:auto;
+  font-size:19px;
+}
+
+.contact a{
+  color:#f5c04a;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  background:#330603;
+  color:#f5dfaa;
+  text-align:center;
+  padding:25px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  nav ul{
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero-content h1{
+    font-size:42px;
+  }
+
+  .hero-content p{
+    font-size:20px;
+  }
+
+  .section-title{
+    font-size:30px;
+  }
+}
 </style>
-</head><body>
-<div class="top">✝ Welcome to Infant Jesus Shrine, Vallur — Where Miracles Happen</div>
-<nav class="nav"><a class="brand" href="#home"><img src="logo.png"><span>INFANT JESUS SHRINE<small>VALLUR</small></span></a><div class="links"><a href="#home">Home</a><a href="#schedule">Mass Timings</a><a href="#about">About</a><a href="#visit">Visit Us</a><a href="#contact">Contact</a></div></nav>
-<section class="hero" id="home"><div><div class="eyebrow">A PLACE OF FAITH • HOPE • MIRACLES</div><h1><span>Welcome to</span>INFANT JESUS SHRINE</h1><p>Vallur — a sacred place of prayer and devotion where hearts encounter the love, mercy and blessings of the Infant Jesus.</p><a class="btn gold" href="#schedule">View Mass Timings</a><a class="btn outline" href="#contact">Contact the Shrine</a></div></section>
-<section class="schedule" id="schedule"><div class="section"><div class="kicker">Join Us in Prayer</div><h2>Mass &amp; Devotional Schedule</h2><p class="intro">All are warmly welcome to join us for the Holy Eucharist, Rosary and Eucharistic Adoration at Infant Jesus Shrine, Vallur.</p><div class="grid"><div class="card"><h3>Every Day</h3><div class="time">7:00 AM</div><div class="event">Holy Mass</div></div><div class="card"><h3>Every Thursday</h3><div class="time">6:00 PM</div><div class="event">Rosary</div><div class="time">6:30 PM</div><div class="event">Holy Mass</div></div><div class="card"><h3>Every Sunday</h3><div class="time">9:00 AM</div><div class="event">Rosary</div><div class="time">9:30 AM</div><div class="event">Holy Mass</div><hr><b style="color:#6f0b06">Second Sunday of Every Month</b><br><span class="event">9:30 AM — Adoration and Holy Mass</span></div></div><div class="prayer">“Bless Our Families • Bless Our Parish • Bless Our World” 🙏</div></div></section>
-<section id="about"><div class="section about"><img src="IJ33.jpeg"><div><div class="kicker">About the Shrine</div><h2>Where Miracles Happen</h2><p class="intro">Infant Jesus Shrine, Vallur, is a place where people come together in faith to worship, pray and experience the loving presence of Jesus.</p><p class="intro">We welcome pilgrims, families, youth and all people of goodwill to place their intentions before the Infant Jesus and grow in hope and faith.</p><div class="features"><div class="feature"><b>🙏 Prayer</b><br>Bring your intentions before the Lord.</div><div class="feature"><b>✝ Eucharist</b><br>Gather with the faithful for Holy Mass.</div><div class="feature"><b>📿 Devotion</b><br>Join Rosary and Adoration.</div><div class="feature"><b>❤️ Community</b><br>United in faith, love and service.</div></div></div></div></section>
-<section class="visit" id="visit"><div class="section"><div class="kicker">Pilgrims Are Welcome</div><h2>Visit Infant Jesus Shrine, Vallur</h2><div class="grid"><div class="card"><h3>🙏 Pray With Us</h3><p>Bring your prayers, thanksgiving and intentions to the Infant Jesus.</p></div><div class="card"><h3>⛪ Celebrate With Us</h3><p>Participate in the Holy Eucharist and parish devotional life.</p></div><div class="card"><h3>👨‍👩‍👧‍👦 Bring Your Family</h3><p>Families and pilgrims are always warmly welcome at the Shrine.</p></div></div></div></section>
-<section class="contact" id="contact"><div class="section"><div class="kicker" style="color:#e8bd5b">Get in Touch</div><h2>Infant Jesus Shrine, Vallur</h2><p>We warmly welcome you to join us in prayer and worship. For Holy Mass intentions, devotional information or parish enquiries, please contact the Shrine.</p><p style="margin-top:22px"><a class="btn gold" target="_blank" href="https://www.instagram.com/Infant_Jesus_Shrine_Vlr/">Follow on Instagram</a><a class="btn outline" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Infant+Jesus+Shrine+Vallur">Find Us on Maps</a></p></div></section>
-<footer>© 2026 Infant Jesus Shrine, Vallur • Where Miracles Happen • All are Welcome</footer>
-</body></html>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+
+<div class="logo-area">
+<img src="logo.png" alt="Infant Jesus Shrine Vallur Logo">
+<h2>Infant Jesus Shrine, Vallur</h2>
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#mass">Mass Schedule</a></li>
+<li><a href="#devotions">Devotions</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Welcome to<br>Infant Jesus Shrine, Vallur</h1>
+
+<p>Where Miracles Happen 🙏</p>
+
+<a href="#mass" class="btn">View Mass Schedule</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+<h2 class="section-title">Infant Jesus Shrine, Vallur</h2>
+
+<div class="about-box">
+
+<p>
+Welcome to the official website of <strong>Infant Jesus Shrine, Vallur</strong>.
+A place of prayer, faith, hope and devotion where devotees come together
+to experience the love and blessings of the Infant Jesus.
+</p>
+
+<br>
+
+<p>
+May the Infant Jesus bless every family, strengthen our faith,
+bring peace to our homes and fill our lives with hope and joy.
+</p>
+
+</div>
+
+</section>
+
+<!-- MASS SCHEDULE -->
+<section class="schedule" id="mass">
+
+<h2 class="section-title">🙏 Holy Mass & Devotional Schedule</h2>
+
+<p class="section-subtitle">
+Join us in prayer and worship at Infant Jesus Shrine, Vallur.
+</p>
+
+<div class="schedule-grid">
+
+<div class="schedule-card">
+<h3>☀️ Every Day</h3>
+<p><strong>7:00 AM</strong></p>
+<p>Holy Mass</p>
+</div>
+
+<div class="schedule-card">
+<h3>🙏 Every Thursday</h3>
+<p><strong>6:00 PM</strong></p>
+<p>Rosary</p>
+<br>
+<p><strong>6:30 PM</strong></p>
+<p>Holy Mass</p>
+</div>
+
+<div class="schedule-card">
+<h3>✝️ Every Sunday</h3>
+<p><strong>9:00 AM</strong></p>
+<p>Rosary</p>
+<br>
+<p><strong>9:30 AM</strong></p>
+<p>Holy Mass</p>
+</div>
+
+<div class="schedule-card">
+<h3>🙏 Second Sunday</h3>
+<p>Every Month</p>
+<br>
+<p><strong>9:30 AM</strong></p>
+<p>Adoration & Holy Mass</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- DEVOTIONS -->
+<section class="devotions" id="devotions">
+
+<h2 class="section-title">Our Devotions</h2>
+
+<p class="section-subtitle">
+Come and experience the loving presence of Jesus through prayer and devotion.
+</p>
+
+<div class="devotion-grid">
+
+<div class="devotion-card">
+<h3>🙏 Holy Eucharist</h3>
+<p>Encounter Jesus in the Most Holy Eucharist.</p>
+</div>
+
+<div class="devotion-card">
+<h3>📿 Holy Rosary</h3>
+<p>Praying together through the intercession of Mother Mary.</p>
+</div>
+
+<div class="devotion-card">
+<h3>✨ Eucharistic Adoration</h3>
+<p>Spend time in the peaceful presence of the Lord.</p>
+</div>
+
+<div class="devotion-card">
+<h3>✝️ Confession</h3>
+<p>Experience God's mercy, forgiveness and healing.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact & Visit Us</h2>
+
+<div class="contact-box">
+
+<p><strong>📍 Infant Jesus Shrine, Vallur</strong></p>
+
+<p>Vallur, Kadapa District</p>
+
+<p>Andhra Pradesh, India</p>
+
+<br>
+
+<p>
+Follow us on Instagram:
+<br>
+<a href="https://www.instagram.com/Infant_Jesus_Shrine_Vlr" target="_blank">
+@Infant_Jesus_Shrine_Vlr
+</a>
+</p>
+
+<br>
+
+<p>
+🙏 We warmly welcome you and your family to pray with us.
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<p><strong>Infant Jesus Shrine, Vallur</strong></p>
+
+<p>© 2026 All Rights Reserved</p>
+
+<p>“Where Miracles Happen” 🙏✨</p>
+
+</footer>
+
+</body>
+</html>
